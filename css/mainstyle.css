@@ -1296,6 +1296,12 @@ button {
     .benefit {
         width: 70%;
     }
+    
+     .benefit:hover {
+        box-shadow: -4px -4px 10px #09090935;
+        width: 75%;
+        cursor: pointer;
+    }
 
     .benefit-subtitle {
         font-size: 14px;
