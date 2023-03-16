@@ -1130,6 +1130,12 @@ button {
     .detail {
         width: 60%;
     }
+    
+    
+    .right-btn {
+        padding: 8px 16px;
+        font-size: 8px;
+    }
 }
 
 @media(min-width:1185px){
