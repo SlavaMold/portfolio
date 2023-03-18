@@ -126,6 +126,7 @@ body {
     padding-right: 20px;
     position: relative;
     padding-right: 10px;
+    
 }
 
 .price-about span{
@@ -138,6 +139,33 @@ body {
     margin-left: 0px;
     margin-top: -4px;
     font-size: 14px;
+}
+
+.price-about b{
+    margin-right: 7px;
+}
+
+#ext{
+    margin-right: 7px;
+}
+/* 
+.timeTo{
+
+} */
+
+.wrap .val{
+    font-size: 20px;
+    color: #e64a4a;
+    background-color: #333332;
+    padding: 5px;
+    border: 1px solid #181817;
+    border-radius: 10px;
+}
+
+.wrap .bord{
+    background-color: none;
+    padding: 1px;
+    font-size: 20px;
 }
 
 /* /////////////////////////////////////ACCORDION///////////////////////////////////// */
@@ -209,38 +237,58 @@ body {
 }
 
 .sale {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    margin-top: -125px;
-    margin-left: 700px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
     transform: rotate(5deg);
-    z-index: 3;
 }
 
 .line-through {
     padding-right: 6px;
     text-decoration: line-through;
+    text-decoration-color: #e64a4a;
 }
 
-@media(max-width:769px) {
-    .sale {
-        margin-top: -140px;
-        margin-left: 250px;
+.col-2{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-2 span{
+    margin-bottom: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+@media(max-width:767px){
+    .product-txt1{
+        flex-direction: row;
+    }
+
+    .col-2{
+        align-items: flex-start;
+        text-align: flex-start;
+    }
+
+    .sale{
+        align-self: center;
+        justify-self: center;
+    }
+
+    .product-descr{
+        padding-top: 8px;
     }
 }
 
-@media(max-width:426px) {
-    .sale {
-        margin-top: -20px;
-        margin-left: 120px;
-    }
-}
 
 /* ////////////////////////////ADD-TO-CART/////////////////////////////////////// */
 
 .button-add {
     padding-left: 20px;
+    align-self: flex-start;
 }
 
 .add-to-cart {
@@ -271,9 +319,9 @@ body {
     margin-left: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 15px
 }
 
 .product-txt1 span {
@@ -689,6 +737,10 @@ textarea.form-input {
 @media(max-width:769px) {
     .modal-vindow {
         width: 350px;
+    }
+
+    .button-add {
+        padding-left: 0px;
     }
 }
 
