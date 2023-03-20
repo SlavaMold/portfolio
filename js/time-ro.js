@@ -30,6 +30,12 @@ window.onload = function () {
                 openOrClosed.classList.add('open');
                 openOrClosed.innerHTML = 'Deschis';
         }
+        
+         if (hours < dts[day].ScompareH & hours <= 9) {
+            openOrClosed.classList.add('closed');
+            openOrClosed.classList.remove('open');
+            openOrClosed.innerHTML = 'Închis';
+            }
 
         if (hours >= dts[day].ScompareH) {
            
