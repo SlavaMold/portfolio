@@ -30,6 +30,12 @@ window.onload = function () {
                 openOrClosed.classList.add('open');
                 openOrClosed.innerHTML = 'Открыто';
         }
+        
+         if (hours < dts[day].ScompareH & hours <= 9) {
+            openOrClosed.classList.add('closed');
+            openOrClosed.classList.remove('open');
+            openOrClosed.innerHTML = 'Закрыто';
+            }
 
         if (hours >= dts[day].ScompareH) {
            
