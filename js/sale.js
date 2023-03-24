@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('sale', true);
         let date = new Date();
         let day = date.getDate();
-        day = day + 15;
+        day = day + 7;
         let cmonth = date.daysInMonth();
         if (day > cmonth) {
             day = day - cmonth;
