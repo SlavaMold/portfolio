@@ -343,6 +343,7 @@ button {
     text-align: center;
     margin-top: 98px;
     margin-bottom: 12px;
+    text-shadow: 1px 1px 3px #000000;
 }
 
 .header-suptitle {
@@ -388,6 +389,7 @@ button {
     text-decoration: none;
     transition: all 0.4s;
     border-radius: 10px;
+    text-shadow: none;
 }
 
 .header-button:hover {
