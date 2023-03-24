@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     cartQuantity = 0;
                     localStorage.setItem('cart', JSON.stringify(cart));
                     localStorage.setItem('cartQuantity', JSON.stringify(cartQuantity));
+                    localStorage.setItem('sale', false);
                     showMiniCart();
                     window.location.href = 'thanks-ro.html'; 
 
