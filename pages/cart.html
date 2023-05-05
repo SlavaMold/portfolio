@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/support.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&family=Inter:wght@200&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&family=Inter:wght@200&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Take a Order</title>
+</head>
+
+<body>
+    <header class="header-dop">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <a href='../index-ru.html'><img src="../img/logo.png" class="header-logo-img"></a>
+                </div>
+
+                <div class="nav">
+                    <a class="nav-item" href="../index-ru.html">ГЛАВНАЯ</a>
+                    <a class="nav-item" href="../index-ru.html#whoUs">О НАС</a>
+                    <a class="nav-item" href="../index-ru.html#production">СПИСОК УСЛУГ</a>
+                    <a class="nav-item" href="#cont">КОНТАКТЫ</a>
+                    <div class="dropdown nav-item">
+                        <a class="dropdown-chose" href="#">ru <button class="drop-activator"> <img class="dropdown-img" src="../img/main-page/icons/caret-down.png"> </button></a> 
+                            <div class="dropdown-content">     
+                              <a class="dropdown-chose" href="cart-ro.html">ro</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <a href="#">
+                        <img class="cart-img" src="../img/cart.png" alt="">
+                        <span class="cart-quantity"></span>
+                    </a>
+                </div>
+
+
+
+                <div class="phone">
+                    <div class="phone-img"><img src="../img/phone.png"></div>
+                    <div class="phone-hold">
+                        <div class="number"><span class="num">+(373) 299-21-651</span></div>
+                        <span class="phone-txt">Номер для связи <br>с администрацией</span>
+                    </div>
+                </div>
+
+                <div class="btn"> <a href="about-page.html" class="button">ВЫБРАТЬ УСЛУГИ</a>
+                </div>
+
+                <div class="burger-menu">
+                    <div class="header-burger"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-cont">
+        <div class="container">
+            <div class="burger-slide active" id="menu-slide">
+                <div class="burger-hold other-hold">
+                    <a class="nav-item hidd" href="../index-ru.html#">ГЛАВНАЯ</a>
+                    <a class="nav-item hidd" href="../index-ru.html#whoUs">О НАС</a>
+                    <a class="nav-item hidd" href="../index-ru.html#production">СПИСОК УСЛУГ</a>
+                    <a class="nav-item hidd" href="#cont">КОНТАКТЫ</a>
+                    <a class="nav-item hidd" href="#">ru</a>
+                    <a class="nav-item hidd" href="cart-ro.html">ro</a>
+                    <a class="nav-item hidd" href="cart.html">
+                        <img class="cart-img-burger" src="../img/cart.svg" alt="">
+                        <span class="cart-quantity-burger"></span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="cart-content"> </div>
+
+            <div class="take-a-order">
+                <div class="forma">
+                    <form name="haisenberg" action="?" method="" class="form-body" id="form"
+                        enctype="multipart/form-data">
+                        <legend>
+                            <h2 class="form-title">
+                                Оформить заказ
+                            </h2>
+                        </legend>
+
+                        <div class="notificat">
+                        Внимание! В случае неверного заполнения формы, ваш заказ не будет обработан!
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="formName">Имя*</label>
+                            <input type="text" class="form-input req" id="formName" name="name" placeholder="">
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="formNumber">Номер телефона*</label>
+                            <input type="text" class="form-input form-phone req" id="formNumber" name="phone" placeholder="">
+                            <div class="checkbox">
+                                <input id="WhatsApp" type="checkbox" name="WhatsApp" class="checkbox-input social">
+                                <label class="form-label" for="WhatsApp">WhatsApp</label>
+                                <input id="Viber" type="checkbox" name="Viber" class="checkbox-input social">
+                                <label class="form-label" for="Viber">Viber</label>
+                                <input id="Telegram" type="checkbox" name="Telegram" class="checkbox-input social">
+                                <label class="form-label" for="Telegram">Telegram</label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="formEmail">E-mail*</label>
+                            <input type="text" class="form-input _email req" id="formEmail" name="email" placeholder="">
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-label"> Желаете доставку? </div>
+                            <div class="options">
+                                <div class="options-item">
+                                    <input id="formOrdered" type="radio" checked value="ordered" name="ord"
+                                        class="options-input">
+                                    <label class="options-label" for="formOrdered"><span>С доставкой (+20
+                                            MDL)</span></label>
+                                </div>
+
+                                <div class="options-item">
+                                    <input id="formNoOrdered" type="radio" value="noordered" name="ord"
+                                        class="options-input">
+                                    <label class="options-label" for="formNoOrdered"><span>Без доставки</span></label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-item">
+                            <label class="form-label" for="formMessage">Комментарий к заказу</label>
+                            <textarea name="Message" id="formMessage" class="form-input"> </textarea>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-label"> Прикрепить фото* </div>
+                            <div class="file">
+                                <div class="file-item">
+
+                                    <input id="formImage" accept=".jpeg, .jpg, .png, .svg, .bmp" name="image" type="file"
+                                        class="file-input req" multiple>
+
+                                    <div class="choose-button"> Выбрать </div>
+                                </div>
+                                <div class="file-preview" id="imagePreview"> </div>
+                                <a href='#' class='delete-img'>x</a>
+                            </div>
+                        </div>
+                        
+                        <div class="accept-block">
+                            <input id="Accept" type="checkbox" name="Accepted" class="checkbox-input req">
+                            <label class="form-label acc-text" for="Accept">Я даю согласие на обработку и хранение 
+                               персональных данных из этой формы.
+                            </label>
+                        </div>
+                        <button class="form-button" type="submit"> Отправить </button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="toModal">
+                
+            </div>
+
+            <div class="insertCookies">
+        
+            </div>
+
+            <!-- <div data-sheetdb-url="https://sheetdb.io/api/v1/hg9weq2r5wyo3"
+            data-sheetdb-search="email[]=avezpal">
+                
+                <p>{{client}}</p>
+            </div> -->
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-hold">
+                <div class="right-footer">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1498.0825328622586!2d28.188597611897045!3d45.90709714651957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65cea4db56ccd%3A0x4e93a2e135241eb1!2sBarracuda!5e0!3m2!1sru!2s!4v1677405997293!5m2!1sru!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="left-footer">
+                    <div class="footer-title">
+                        КОНТАКТЫ
+                    </div>
+                    <div class="contacts" id="cont">
+                        <ul class="contact">
+                            <li class="list-it">Номер телефона (tel / WhatsApp)<br> <span>+(373) 798-29-848</span> </li>
+                            <li class="list-it">Номер телефона (fax)<br> <span>+(373) 299-21-651</span> </li>
+                            <li class="list-it">Номер телефона (Viber)<br> <span>+(373) 621-65-200</span> </li>
+                            <li class="list-it">Facebook<br> <span><a class="footer-link"
+                                        href="https://facebook.com/people/Allprintcahul/100047791218028/">Перейти</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                Данный вебсайт реализован в рамках конкурса "Tekwill Junior Ambassadors", организованного
+                организацией ”Tekwill în Fiecare Școală” и не обязательно отражает суть проекта.
+                © allprintcahul 2023
+                All rights secured.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/cart-content.js"></script>
+    <script src="../js/burger-side.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/cookie.js"></script>
+    <!-- <script>
+       fetch('https://sheetdb.io/api/v1/hg9weq2r5wyo3', {
+        method:'GET', 
+        headers: {'Authorization': 'Bearer 2c7dwucsmcbkk6wy589k8vtbkzo7sxv1mzkhmej2'}
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+    </script> -->
+    <script src="https://sheetdb.io/handlebars.js"></script>
+</body>
+
+</html>

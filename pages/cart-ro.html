@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="stylesheet" href="../css/support.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&family=Inter:wght@200&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&family=Inter:wght@200&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Comanda</title>
+</head>
+
+<body>
+    <header class="header-dop">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <a href='../index.html'><img src="../img/logo.png" class="header-logo-img"></a>
+                </div>
+
+                <div class="nav">
+                    <a class="nav-item" href="../index.html">PRINCIPAL</a>
+                    <a class="nav-item" href="../index.html#whoUs">DESPRE NOI</a>
+                    <a class="nav-item" href="../index.html#production">SERVICII</a>
+                    <a class="nav-item" href="#cont">CONTACTE</a>
+                    <div class="dropdown nav-item">
+                        <a class="dropdown-chose" href="#">ro <button class="drop-activator"> <img class="dropdown-img" src="../img/main-page/icons/caret-down.png"> </button></a> 
+                            <div class="dropdown-content">     
+                              <a class="dropdown-chose" href="cart.html">ru</a>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <a href="#">
+                        <img class="cart-img" src="../img/cart.png" alt="">
+                        <span class="cart-quantity"></span>
+                    </a>
+                </div>
+
+
+
+                <div class="phone">
+                    <div class="phone-img"><img src="../img/phone.png"></div>
+                    <div class="phone-hold">
+                        <div class="number"><span class="num">+(373) 299-21-651</span></div>
+                        <span class="phone-txt">Număr de<br>administrator</span>
+                    </div>
+                </div>
+
+                <div class="btn"> <a href="about-page-ro.html" class="button">ALEGE SERVICIILE</a>
+                </div>
+
+                <div class="burger-menu">
+                    <div class="header-burger"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-cont">
+        <div class="container">
+            <div class="burger-slide active" id="menu-slide">
+                <div class="burger-hold other-hold">
+                    <a class="nav-item hidd" href="../index.html#">PRINCIPAL</a>
+                    <a class="nav-item hidd" href="../index.html#whoUs">DESPRE NOI</a>
+                    <a class="nav-item hidd" href="../index.html#production">SERVICII</a>
+                    <a class="nav-item hidd" href="#cont">CONTACTE</a>
+                    <a class="nav-item hidd" href="#">ro</a>
+                    <a class="nav-item hidd" href="cart.html">ru</a>
+                    <a class="nav-item hidd" href="#">
+                        <img class="cart-img-burger" src="../img/cart.svg" alt="">
+                        <span class="cart-quantity-burger"></span>
+                    </a>
+                </div>
+        
+            </div>
+
+            <div id="cart-content"> </div>
+
+            <div class="take-a-order">
+                <div class="notificat"></div>
+                <div class="forma">
+                    <form name="haisenberg" action="" method="" class="form-body" id="form"
+                        enctype="multipart/form-data">
+                        <legend>
+                            <h2 class="form-title">
+                                Datele de plată
+                            </h2>
+                        </legend>
+
+                        <div class="notificat">
+                        Atenție! Dacă acest formular este completat incorect, comanda dumneavoastră nu va fi procesată!
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="formName">Nume*</label>
+                            <input type="text" class="form-input req" id="formName" name="name" placeholder="">
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="formNumber">Număr de telefon*</label>
+                            <input type="text" class="form-input form-phone  req" id="formNumber" name="phone" placeholder="">
+                            <div class="checkbox">
+                                <input id="WhatsApp" type="checkbox" name="WhatsApp" class="checkbox-input">
+                                <label class="form-label" for="WhatsApp">WhatsApp</label>
+                                <input id="Viber" type="checkbox" name="Viber" class="checkbox-input">
+                                <label class="form-label" for="Viber">Viber</label>
+                                <input id="Telegram" type="checkbox" name="Telegram" class="checkbox-input">
+                                <label class="form-label" for="Telegram">Telegram</label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="formEmail">E-mail*</label>
+                            <input type="text" class="form-input _email req" id="formEmail" name="email" placeholder="">
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-label"> Doriți livrare? </div>
+                            <div class="options">
+                                <div class="options-item">
+                                    <input id="formOrdered" type="radio" checked value="ordered" name="ord"
+                                        class="options-input">
+                                    <label class="options-label" for="formOrdered"><span>Cu livrare (+20
+                                            MDL)</span></label>
+                                </div>
+
+                                <div class="options-item">
+                                    <input id="formNoOrdered" type="radio" value="noordered" name="ord"
+                                        class="options-input">
+                                    <label class="options-label" for="formNoOrdered"><span>Fără livrare</span></label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-item">
+                            <label class="form-label" for="formMessage">Comentariu la comanda</label>
+                            <textarea name="Message" id="formMessage" class="form-input"> </textarea>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-label"> Adauga imagini* </div>
+                            <div class="file">
+                                <div class="file-item">
+
+                                    <input id="formImage" accept=".jpeg, .jpg, .png, .svg, .bmp" name="image" type="file"
+                                        class="file-input req" multiple>
+
+                                    <div class="choose-button"> Alegere </div>
+                                </div>
+                                <div class="file-preview" id="imagePreview"> </div>
+                                <a href='#' class='delete-img'>x</a>
+                            </div>
+                        </div>
+                        
+                        <div class="accept-block">
+                            <input id="Accept" type="checkbox" name="Accepted" class="checkbox-input req">
+                            <label class="form-label acc-text" for="Accept">Sunt de acord cu prelucrarea și stocarea
+                                datele personale din acest formular.
+                            </label>
+                        </div>
+                        <button class="form-button" type="submit"> Trimite </button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="toModal">
+                
+            </div>
+
+            <div class="insertCookies">
+        
+            </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-hold">
+                <div class="right-footer">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15705.312239436642!2d28.18891572424231!3d45.90463856512242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65cea4db56ccd%3A0x4e93a2e135241eb1!2sBarracuda!5e0!3m2!1sro!2sus!4v1678632784021!5m2!1sro!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="left-footer">
+                    <div class="footer-title">
+                        CONTACTE
+                    </div>
+                    <div class="contacts" id="cont">
+                        <ul class="contact">
+                                <li class="list-it">Numărul de telefon (tel / WhatsApp)<br> <span>+(373) 798-29-848</span> </li>
+                                <li class="list-it">Numărul de telefon (fax)<br> <span>+(373) 299-21-651</span> </li>
+                                <li class="list-it">Numărul de telefon (Viber)<br> <span>+(373) 621-65-200</span> </li>
+                                <li class="list-it">Facebook<br> <span><a class="footer-link" href="https://facebook.com/people/Allprintcahul/100047791218028/">click</a></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                Acest website a fost realizat în cadrul
+                    competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare
+                    Școală” și nu reflectă neapărat opinia proiectului.
+                © allprintcahul 2023
+                All rights secured.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/cart-content-ro.js"></script>
+    <script src="../js/burger-side.js"></script>
+    <script src="../js/form-ro.js"></script>
+    <script src="../js/cookie-ro.js"></script>
+</body>
+
+</html>

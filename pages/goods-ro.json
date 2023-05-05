@@ -1,0 +1,101 @@
+{
+    "0":{
+        "name" : "Imprimare colorată pe coli A4",
+        "cost" : "2", 
+        "Msq" : "NO",
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de copii, imprimare pe o față / pe două fețe și editare suplimentară a imaginii.",
+        "image" : "../img/other/3.jpg",
+        "Special" : "NO"
+
+    },
+    "1":{
+        "name" : "Imprimare alb-negru pe coli A4",
+        "cost" : "0.5", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de copii, imprimare pe o față / pe două fețe și editare suplimentară a imaginii.",
+        "image" : "../img/other/3.jpg",
+        "Msq" : "NO",
+        "Special" : "NO"
+    },
+    "2":{
+        "name" : "Moletare pe placă de plastic și spumă",
+        "cost" : "100", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de exemplare, dimensiunea produsului.",
+        "image" : "../img/other/prod0.png",
+        "Msq" : "YES",
+        "Special" : "NO"
+    },
+    "3":{
+        "name" : "Tăiere cu plotter",
+        "cost" : "320", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de exemplare, dimensiunea produsului.",
+        "image" : "../img/other/prod1.png",
+        "Msq" : "YES",
+        "Special" : "NO"
+    },
+    "4":{
+        "name" : "Imprimare pe pânză (450х350)",
+        "cost" : "400", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de copii, tipul de pânză.",
+        "image" : "../img/other/2.jpg",
+        "Msq" : "NO",
+        "Special" : "NO"
+    },
+    "5":{
+        "name" : "Imprimare pe pânză (600х400)",
+        "cost" : "500", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de copii, tipul de pânză.",
+        "image" : "../img/other/2.jpg",
+        "Msq" : "NO",
+        "Special" : "NO"
+    },
+    "6":{
+        "name" : "Imprimare pe pânză (700х500)",
+        "cost" : "600", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de copii, tipul de pânză.",
+        "image" : "../img/other/2.jpg",
+        "Msq" : "NO",
+        "Special" : "NO"
+    },
+    "7":{
+        "name" : "Imprimare pe pânză (900х600)",
+        "cost" : "700", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de copii, tipul de pânză.",
+        "image" : "../img/other/2.jpg",
+        "Msq" : "NO",
+        "Special" : "NO"
+    },
+    "8":{
+        "name" : "Imprimarea pe o banner",
+        "cost" : "120", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de exemplare, dimensiunea produsului.",
+        "image" : "../img/other/5.jpg",
+        "Msq" : "YES",
+        "Special" : "NO"
+    },
+    "9":{
+        "name" : "Imprimare pe lentă adezivă",
+        "cost" : "150", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de exemplare, dimensiunea produsului, suplimentar prelucrare.",
+        "image" : "../img/other/6.jpg",
+        "Msq" : "YES",
+        "Special" : "NO"
+    },
+    "10":{
+        "name" : "Imprimare pe tapet foto",
+        "cost" : "250", 
+        "description" : "În comentariile la comandă, este posibil să specificați numărul de exemplare, dimensiunea produsului, suplimentar prelucrare.",
+        "image" : "../img/other/7.jpg",
+        "Msq" : "YES",
+        "Special" : "NO"
+    },
+    "11":{
+        "name" : "Transfer termic pe tricouri",
+        "cost" : "80", 
+        "description" : "Când cumpărați acest serviciu în comentarii, trebuie să indicați data și ora la care vă este convenabil vino la stabilirea noastră cu tricoul dvs.",
+        "image" : "../img/other/4.jpg",
+        "Msq" : "NO",
+        "Special" : "YES"
+    }
+
+
+}
